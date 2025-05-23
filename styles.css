@@ -1,0 +1,153 @@
+/* Reset et box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(30, 10%, 34%);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Carte principale */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  max-width: 735px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Contenu intérieur */
+.card-contain {
+  padding: 30px;
+}
+
+/* Image principale */
+.card-contain img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+/* Titre et description */
+.present-recipe h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 36px;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 16px;
+}
+
+.present-recipe p {
+  margin-bottom: 24px;
+}
+
+/* Bloc temps de préparation */
+.time-recipe {
+  background-color: hsl(330, 100%, 98%);
+  padding: 24px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.time-recipe p {
+  font-weight: 700;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 12px;
+}
+
+.time-recipe ul {
+  list-style: inside disc;
+}
+
+.time-recipe li {
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+
+/* Ingrédients */
+.ingredients-recipe h2,
+.instructions-recipe h2,
+.nutrition-recipe h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 28px;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 16px;
+}
+
+.ingredients-recipe ul {
+  list-style: inside disc;
+  margin-bottom: 24px;
+}
+
+.ingredients-recipe li {
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+
+/* Instructions */
+.instructions-recipe ol {
+  list-style-position: inside;
+  counter-reset: step;
+}
+
+.instructions-recipe li {
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+
+.instructions-recipe li::marker {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+/* Nutrition */
+.nutrition-recipe p {
+  margin-bottom: 16px;
+}
+
+.nutrition-recipe table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-recipe td {
+  padding: 12px 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-recipe td:first-child {
+  padding-left: 12px;
+}
+
+.nutrition-recipe td:last-child {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+  padding-right: 12px;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .card-contain {
+    padding: 24px;
+  }
+
+  .present-recipe h1 {
+    font-size: 28px;
+  }
+
+  .ingredients-recipe h2,
+  .instructions-recipe h2,
+  .nutrition-recipe h2 {
+    font-size: 24px;
+  }
+}
