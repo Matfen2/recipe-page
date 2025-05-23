@@ -14,14 +14,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 /* Carte principale */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
-  max-width: 735px;
+  max-width: 565px;
   width: 100%;
   overflow: hidden;
 }
